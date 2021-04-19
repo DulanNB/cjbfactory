@@ -8,6 +8,7 @@
     .banner_area .banner_inner .banner_content h2 {
         font-size: 38px;
     }
+
 </style>
 
 

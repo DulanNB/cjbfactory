@@ -15,6 +15,26 @@
         font-size: 17px;
         font-weight: 1000;
     }
+    p {
+        font-family: Montserrat;
+        color: #331202;
+    }
+
+    h2, h1, h5, h4 {
+        font-family: Montserrat;
+        color: #652405;
+    }
+
+    .portfolio_area .filters ul li {
+        font-family: Montserrat;
+        font-weight: 1000;
+        font-size: 14px;
+    }
+
+    .primary_btn {
+        background: #532408;
+    }
+
 
     .navbar .nav .nav-item:hover .nav-link, .navbar .nav .nav-item.active .nav-link {
         color: #090404;

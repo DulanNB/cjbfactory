@@ -3,6 +3,14 @@
 @yield('content')
 
 <style>
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
     .overlay {
         opacity: 0.1;
     }
@@ -97,9 +105,9 @@
         <nav class="navbar navbar-expand-lg navbar-light" id="navbar1">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""
-                                                                      style="margin-left:  2px; width: 155px; height: 48px"></a>
-                <a class="navbar-brand logo_inner_page" href="index.html"><img src="img/logo2.png" alt=""></a>
+                <a class="navbar-brand logo_h" href="/"><img src="img/logo.png" alt=""
+                                                                      style="margin-left:  -23px; width: 225px; height: 70px"></a>
+                <a class="navbar-brand logo_inner_page" href="/"><img src="img/logo2.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,19 +135,19 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6">
                     <div class="banner_content">
-                        <h3>Hey There !</h3>
-                        <h1 class="text-uppercase" style="font-weight: bold">I am Chandana</h1>
-                        <h5 class="text-uppercase">Freelance Designer and Illustrator</h5>
-                        <div class="social_icons my-5">
-                            <a href="#"><i class="ti-twitter"></i></a>
-                            <a href="#"><i class="ti-skype"></i></a>
-                            <a href="#"><i class="ti-instagram"></i></a>
-                            <a href="#"><i class="ti-dribbble"></i></a>
-                            <a href="#"><i class="ti-vimeo"></i></a>
-                        </div>
-                        <button class="primary_btn" href="#"
-                                onclick="smoothScroll(document.getElementById('portfolio'))"><span
-                                style="font-family: Montserrat;">See My Work</span></button>
+{{--                        <h3>Hey There !</h3>--}}
+{{--                        <h1 class="text-uppercase" style="font-weight: bold">I am Chandana</h1>--}}
+{{--                        <h5 class="text-uppercase">Freelance Designer and Illustrator</h5>--}}
+{{--                        <div class="social_icons my-5">--}}
+{{--                            <a href="#"><i class="ti-twitter"></i></a>--}}
+{{--                            <a href="#"><i class="ti-skype"></i></a>--}}
+{{--                            <a href="#"><i class="ti-instagram"></i></a>--}}
+{{--                            <a href="#"><i class="ti-dribbble"></i></a>--}}
+{{--                            <a href="#"><i class="ti-vimeo"></i></a>--}}
+{{--                        </div>--}}
+{{--                        <button class="primary_btn" href="#"--}}
+{{--                                onclick="smoothScroll(document.getElementById('portfolio'))"><span--}}
+{{--                                style="font-family: Montserrat;">See My Work</span></button>--}}
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -152,7 +160,7 @@
     </div>
 </section>
 
-<section class="about_area section_gap">
+<section class="about_area section_gap" style="margin-top: -77px;">
     <div class="container">
         <div class="row justify-content-start align-items-center">
             <div class="col-lg-5">
@@ -247,6 +255,7 @@
                             function unhover_sample2(element) {
                                 element.setAttribute('src', 'img/testimonials/zuumte_dark.png');
                             }
+
                         </script>
                         <div class="col-lg-6">
                             <div class="testi-right">
@@ -274,10 +283,19 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="col-lg-6">
-                                <img id="my-img" src="img/testimonials/zuumte.png" alt="" onmouseover="hover(this);"
-                                     onmouseout="unhover(this);">
+                                <img id="my-img" src="img/testimonials/zuumte.png" onmouseover="hover_sample3(this);"
+                                     onmouseout="unhover_sample3(this);">
                             </div>
                         </div>
+                        <script>
+                            function hover_sample3(element) {
+                                element.setAttribute('src', 'img/testimonials/zuumte.png');
+                            }
+                            function unhover_sample3(element) {
+                                element.setAttribute('src', 'img/testimonials/zuumte_dark.png');
+                            }
+
+                        </script>
                         <div class="col-lg-6">
                             <div class="testi-right">
                                 <h4>Roser Henrique</h4>
@@ -305,6 +323,16 @@
 </section>
 <!--================ End Testimonial Area =================-->
 
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img id = "mainwork" class="img-fluid" src="" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!--================ Start Portfolio Area =================-->
 <section class="portfolio_area" id="portfolio">
@@ -319,26 +347,24 @@
             </div>
         </div>
 
-        <div class="filters portfolio-filter">
-            <ul>
-                <li class="active" data-filter="*">all</li>
-                <li data-filter=".popular">popular</li>
-                <li data-filter=".latest"> latest</li>
-                <li data-filter=".following">following</li>
-                <li data-filter=".upcoming">upcoming</li>
-            </ul>
-        </div>
+
 
         <div class="filters-content">
             <div class="container">
                 <div class="row portfolio-grid">
                     <div class="grid-sizer col-6 col-md-6 col-lg-3"></div>
-                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
-                        <div class="single_portfolio">
-                            <img class="img-fluid w-100" src="img/portfolio/03.jpg"
-                                 style="padding-left: 0px; padding-right: 0px" alt="">
+
+
+                        <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                            <div class="single_portfolio">
+                                <a href="" onclick="load(id='01')" data-toggle="modal" data-target="#exampleModalCenter">
+                                <img class="img-fluid w-100" src="img/portfolio/01.jpg"
+                                     style="padding-left: 0px; padding-right: 0px" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
+
+
 
                     <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
                         <div class="single_portfolio">
@@ -361,34 +387,70 @@
 
                     <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
                         <div class="single_portfolio">
-                            <img class="img-fluid w-100" src="img/portfolio/02.jpg" style="padding: 0px;" alt="">
+                            <img class="img-fluid w-100" src="img/portfolio/05.jpg" style="padding: 0px;" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
                         <div class="single_portfolio">
-                            <img class="img-fluid w-100" src="img/portfolio/03.jpg" style="padding: 0px;" alt="">
+                            <img class="img-fluid w-100" src="img/portfolio/06.jpg" style="padding: 0px;" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
                         <div class="single_portfolio">
-                            <img class="img-fluid w-100" src="img/portfolio/04.jpg" style="padding: 0px;" alt="">
+                            <img class="img-fluid w-100" src="img/portfolio/07.jpg" style="padding: 0px;" alt="">
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
                         <div class="single_portfolio">
-                            <img class="img-fluid w-100" src="img/portfolio/02.jpg" style="padding: 0px;" alt="">
+                            <img class="img-fluid w-100" src="img/portfolio/08.jpg" style="padding: 0px;" alt="">
                         </div>
                     </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/09.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/10.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/11.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+
+                    <a href="" data-toggle="modal" data-target="#exampleModalCenter">
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/12.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+                    </a>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
+
 <script>
+
+    function load(id)
+        {
+        var mainwork = document.getElementById('mainwork')
+        mainwork.src = "img/portfolio/works/"+id+".jpg";
+        }
+
     window.smoothScroll = function (target) {
         var scrollContainer = target;
         do { //find scroll container

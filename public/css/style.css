@@ -463,15 +463,15 @@ button.primary_btn {
 }
 
 .home_banner_area {
-    background: url(../img/bg.jpg) no-repeat top center;
+    background: url(../img/bg.png) no-repeat top center;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     min-height: 890px
 }
 
 @media (max-width: 991px) {
     .home_banner_area {
-
+        background-size: 610px;
     }
 }
 

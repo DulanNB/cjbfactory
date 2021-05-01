@@ -435,6 +435,32 @@
                     </div>
                     </a>
 
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/13.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/14.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                        <div class="single_portfolio">
+                            <img class="img-fluid w-100" src="img/portfolio/15.jpg" style="padding: 0px;" alt="">
+                        </div>
+                    </div>
+
+                    <a href="" data-toggle="modal" data-target="#exampleModalCenter">
+                        <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
+                            <div class="single_portfolio">
+                                <img class="img-fluid w-100" src="img/portfolio/16.jpg" style="padding: 0px;" alt="">
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>

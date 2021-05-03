@@ -17,10 +17,6 @@
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 
     <link rel="stylesheet" href="public/fonts/GrinchedRegular.otf">
-
-
-
-
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,900' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- main css -->

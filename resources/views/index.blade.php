@@ -99,6 +99,26 @@
         }
     }
 
+
+     #loader {
+         border: 16px solid #f3f3f3; /* Light grey */
+         border-top: 16px solid #3498db; /* Blue */
+         border-radius: 50%;
+         width: 120px;
+         height: 120px;
+         animation: spin 2s linear infinite;
+     }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .hide-loader{
+        display:none;
+    }
+
+
 </style>
 <header class="header_area">
     <div class="main_menu">
@@ -324,10 +344,11 @@
 <!--================ End Testimonial Area =================-->
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"  aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered text-center" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <img id = "mainwork" class="img-fluid" src="" alt="">
+                <span  id="loader"class="fa fa-spinner fa-spin fa-3x"></span>
+                <img id = "mainwork" class="img-fluid" src="" alt="" style="visibility: hidden">
             </div>
         </div>
     </div>
@@ -353,8 +374,6 @@
             <div class="container">
                 <div class="row portfolio-grid">
                     <div class="grid-sizer col-6 col-md-6 col-lg-3"></div>
-
-
                         <div class="col-lg-3 col-md-6 col-6 all latest popular upcoming" style="padding: 0px">
                             <div class="single_portfolio">
                                 <a href="" onclick="load(id='01')" data-toggle="modal" data-target="#exampleModalCenter">
@@ -473,8 +492,13 @@
 
     function load(id)
         {
+            document.getElementById('loader').style.display='display'
         var mainwork = document.getElementById('mainwork')
         mainwork.src = "img/portfolio/works/"+id+".jpg";
+        mainwork.style.visibility='visible'
+            document.getElementById('loader').style.display='none'
+
+
         }
 
     window.smoothScroll = function (target) {

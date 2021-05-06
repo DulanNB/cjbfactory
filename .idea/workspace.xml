@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7432b056-5e1e-4acf-93c8-7796fd4cfbff" name="Default Changelist" comment="ffchange" />
+    <list default="true" id="7432b056-5e1e-4acf-93c8-7796fd4cfbff" name="Default Changelist" comment="ffchange">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +135,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Porfolio/dulan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nomadpace" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -159,7 +162,10 @@
       <workItem from="1619795195738" duration="3384000" />
       <workItem from="1619878331466" duration="14974000" />
       <workItem from="1619957079578" duration="5890000" />
-      <workItem from="1620055209017" duration="1298000" />
+      <workItem from="1620055209017" duration="2035000" />
+      <workItem from="1620108381576" duration="1221000" />
+      <workItem from="1620220571269" duration="632000" />
+      <workItem from="1620311352155" duration="635000" />
     </task>
     <task id="LOCAL-00001" summary="1st">
       <created>1618815682156</created>
@@ -231,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620058690435</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ffchange">
+      <created>1620058836151</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1620058836151</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
